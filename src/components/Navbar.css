@@ -102,6 +102,13 @@
   padding-left: 2.5rem;
 }
 
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
@@ -121,6 +128,26 @@
 
   .logo-text {
     font-size: 1.2rem;
+  }
+
+  .nav-mobile-link {
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .nav-mobile-link {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
   }
 }
 

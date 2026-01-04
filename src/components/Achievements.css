@@ -224,14 +224,24 @@
 @media (max-width: 768px) {
   .achievements-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .achievement-card {
-    padding: 2rem;
+    padding: 1.8rem;
+  }
+
+  .achievement-icon {
+    font-size: 2.5rem;
+    padding: 1rem;
   }
 
   .achievement-title {
     font-size: 1.2rem;
+  }
+
+  .achievement-description {
+    font-size: 0.9rem;
   }
 
   .seminars-section {
@@ -239,11 +249,47 @@
   }
 
   .seminars-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .seminar-item {
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 
   .achievements-summary {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .summary-card {
+    padding: 1.5rem;
+  }
+
+  .summary-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-card {
+    padding: 1.5rem;
+  }
+
+  .achievement-icon {
+    font-size: 2rem;
+  }
+
+  .achievement-title {
+    font-size: 1.1rem;
+  }
+
+  .seminars-section {
+    padding: 1.5rem;
+  }
+
+  .seminars-title {
+    font-size: 1.4rem;
   }
 }
 

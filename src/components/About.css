@@ -204,7 +204,7 @@
 @media (max-width: 1024px) {
   .about-content {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .about-stats {
@@ -213,24 +213,68 @@
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+
   .about-text {
     padding: 2rem;
   }
 
   .about-heading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .about-description {
     font-size: 1rem;
+    line-height: 1.7;
   }
 
   .about-stats {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .stat-card {
     padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .stat-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .education-icon {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    padding: 1.5rem;
+  }
+
+  .about-heading {
+    font-size: 1.4rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .stat-card {
+    padding: 1.2rem;
   }
 }
 

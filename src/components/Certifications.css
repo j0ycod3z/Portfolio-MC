@@ -176,19 +176,34 @@
 @media (max-width: 768px) {
   .certifications-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .cert-card {
     padding: 1.5rem;
   }
 
+  .cert-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cert-icon {
+    font-size: 2rem;
+  }
+
   .cert-name {
     font-size: 1.1rem;
+  }
+
+  .cert-issuer {
+    font-size: 0.95rem;
   }
 
   .cert-stats {
     gap: 2rem;
     padding: 2rem;
+    flex-direction: column;
   }
 
   .stat-divider {
@@ -197,6 +212,29 @@
 
   .stat-number {
     font-size: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-card {
+    padding: 1.2rem;
+  }
+
+  .cert-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cert-name {
+    font-size: 1rem;
+  }
+
+  .cert-stats {
+    padding: 1.5rem;
   }
 }
 

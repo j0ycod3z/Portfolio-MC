@@ -230,26 +230,43 @@
 }
 
 @media (max-width: 768px) {
+  .contact-container {
+    gap: 2rem;
+  }
+
   .contact-info-section,
   .social-card {
     padding: 2rem;
   }
 
   .contact-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .social-heading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .contact-text,
   .social-text {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .contact-item {
     padding: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .contact-value {
+    font-size: 1rem;
   }
 
   .social-link-card {
@@ -267,6 +284,44 @@
 
   .social-label-large {
     font-size: 1.1rem;
+  }
+
+  .social-username-large {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-section,
+  .social-card {
+    padding: 1.5rem;
+  }
+
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .social-heading {
+    font-size: 1.4rem;
+  }
+
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .social-link-card {
+    padding: 1.2rem;
+    min-height: 80px;
+  }
+
+  .social-icon-large {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+
+  .social-label-large {
+    font-size: 1rem;
   }
 }
 
