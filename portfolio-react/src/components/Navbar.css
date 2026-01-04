@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom-color: var(--border-color);
+  box-shadow: 0 4px 20px rgba(204, 105, 51, 0.08);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-desktop {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-1);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-mobile-toggle {
+  display: none;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+.nav-mobile-menu {
+  display: none;
+  overflow: hidden;
+  background: var(--bg-light);
+  box-shadow: var(--shadow-lg);
+}
+
+.nav-mobile-link {
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--text-gray);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-mobile-link:hover {
+  color: var(--primary-color);
+  background: var(--bg-gray);
+  padding-left: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile-toggle {
+    display: block;
+  }
+
+  .nav-mobile-menu {
+    display: block;
+  }
+
+  .nav-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
+
